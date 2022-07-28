@@ -35,7 +35,7 @@ const SimpleInput = (props) => {
     <form onSubmit={formSubmitHandler}>
       <div className={inputClasses} >
         <label htmlFor='name' >Type Something..</label>
-        <textarea style={{width: '600px', height: '200px', border: '1px solid'}} type='text' id='name' onChange={handleChange} onBlur={inputBlurHandler}/>
+        <textarea style={{width: '600px', height: '200px', border: '1px solid #ccc'}} type='text' id='name' onChange={handleChange} onBlur={inputBlurHandler}/>
         {inputIsInvalid && <p className='error-text'>Field must not be empty!</p>}
       </div>
       <div className="form-actions">
